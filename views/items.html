@@ -1,0 +1,66 @@
+{% extends "main.html" %}
+{% block itemcontent %}
+{% autoescape off %}
+
+      <div class="row">
+        <div class="col-sm-12 col-md-2">
+          <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" class="active filter" data-filter="all"><a href="#">Show All</a></li>
+            <li role="presentation" class="filter" data-filter=".category-1"><a href="#">Category 1</a></li>
+            <li role="presentation" class="filter" data-filter=".category-2"><a href="#">Category 2</a></li>
+          </ul>
+        </div>
+
+      <div class="col-sm-1 col-md-10">
+      <div id="Container">
+          <div class="row">
+              <div class="col-sm-2 col-md-4 mix category-1" data-myorder="2">
+              <div class="thumbnail">
+                <img src="http://www.wired.com/images_blogs/photos/uncategorized/2008/03/04/puppy.jpg" alt="...">
+                <div class="caption">
+                  <h3>Puppy</h3>
+                  <p>Cute.</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-2 col-md-4 mix category-2" data-myorder="4">
+              <div class="thumbnail">
+                <img src="http://funmozar.com/wp-content/uploads/2014/09/Cute-Baby-Penguin-02.jpg" alt="...">
+                <div class="caption">
+                  <h3>Penguin</h3>
+                  <p>Very cute.</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-2 col-md-4 mix category-1" data-myorder="1">
+              <div class="thumbnail">
+                <img src="https://41.media.tumblr.com/313012119f82403c23f72d91c6e4859d/tumblr_mk5uo1jQjO1qd7ovlo1_500.jpg" alt="...">
+                <div class="caption">
+                  <h3>Cow</h3>
+                  <p>Sweet.</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-sm-2 col-md-4 mix category-2" data-myorder="8">
+              <div class="thumbnail">
+                <img src="http://cdn.attackofthecute.com/July-26-2012-00-29-23-bunnjekeke.jpg" alt="...">
+                <div class="caption">
+                  <h3>Bunny</h3>
+                  <p>Very sweet.</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+</div>
+</div>
+{% endautoescape %}
+{% endblock %}

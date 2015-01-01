@@ -2,4 +2,21 @@
 	display: none;
 }
 
+.navbar-default .navbar-brand {
+    color: #FFFFFF;
+}
+
+.navbar { 
+	background-color : #3C4142;
+}
+
+.nav-mytitle {
+	font-size: 32px;
+}
+
+.MainScreen {
+	/*background-color : #D0D0CD;*/
+	background-size: 100%;
+}
+
 

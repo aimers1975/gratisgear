@@ -82,7 +82,7 @@ class BaseHandler(webapp2.RequestHandler):
 
 class MainHandler(BaseHandler):
   def get(self):
-    self.render_template('main.html')
+    self.render_template('items.html')
 
 class SendEmail(webapp2.RequestHandler):
   def post(self,target,in_subject,in_message):
