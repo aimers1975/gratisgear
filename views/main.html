@@ -56,9 +56,10 @@
             <!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
             </fb:login-button>-->
             <div id="fb-root"></div>
-            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" scope="public_profile,email" onlogin="checkLoginState();"></div>
+            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" scope="public_profile,email" onlogin="checkLoginState();">
+            </div>
             </div> 
-            <div class="nav navbar-nav navbar-right" id="status">
+            <div id="status">
             </div>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -66,8 +67,6 @@
     </nav>
     <div id="Container">
     {% block itemcontent %}
-    {% endblock %}
-    {% block fblogin %}
     {% endblock %}
       <div
           class="fb-like"

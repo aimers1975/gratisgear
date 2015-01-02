@@ -2,11 +2,61 @@
 	display: none;
 }
 
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #777777;
+    background-color: #3C4142;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #777777;
+    background-color: transparent;
+}
+
+/*
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: #777777;
+  background-color: transparent;
+}
+
+.collapse .navbar-collapse:hover, .collapse .navbar-collapse:focus {
+  color: #777777;
+  background-color: transparent;
+}
+
+.nav .navbar-nav:hover, .nav .navbar-nav:focus {
+  color: #777777;
+  background-color: transparent;
+}
+
+.dropdown:hover, .dropdown:focus {
+  color: #777777;
+  background-color: transparent;
+}
+
+.dropdown-toggle:hover, .dropdown-toggle:focus {
+  color: #777777;
+  background-color: transparent;
+}*/
+
+.navbar-default .navbar-nav > li > a {
+	color: #FFFFFF;
+	background-color: #3C4142;
+}
+
 .navbar-default .navbar-brand {
     color: #FFFFFF;
+    background-color: #3C4142;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+color: #FFFFFF;
+background-color: transparent;
 }
 
 .navbar { 
+	color: #FFFFFF;
 	background-color : #3C4142;
 }
 
@@ -18,5 +68,7 @@
 	/*background-color : #D0D0CD;*/
 	background-size: 100%;
 }
+
+
 
 

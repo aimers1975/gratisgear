@@ -1,5 +1,6 @@
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
+    var mystatus;
     console.log('statusChangeCallback');
     console.log(response);
     // The response object is returned with a status field that lets the
@@ -11,13 +12,12 @@
       testAPI();
     } else if (response.status === 'not_authorized') {
       // The person is logged into Facebook, but not your app.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
+      updateStatusDiv('Please log into this application.');
+
     } else {
       // The person is not logged into Facebook, so we're not sure if
       // they are logged into this app or not.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into Facebook.';
+      updateStatusDiv('Please log into Facebook.');
     }
   }
 
@@ -28,6 +28,16 @@
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
+  }
+
+  // Updates the login status div
+  function updateStatusDiv(myInnerHTML) {
+      mystatus = document.getElementById('status');
+      mystatus.innerHTML = myInnerHTML; //'Please log ' + 'into Facebook.';
+      mystatus.classList.add('nav');
+      mystatus.classList.add('navbar-nav');
+      mystatus.classList.add('navbar-right');
+      mystatus.style.color = "#FFFFFF";    
   }
 
   window.fbAsyncInit = function() {
@@ -72,13 +82,13 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
-      document.getElementById('status').innerHTML =
-        'Logged in as: ' + response.name;
+      updateStatusDiv('Logged in as: ' + response.name);
     });
   }
 
   (function(d, s, id) {
                   var js, fjs = d.getElementsByTagName(s)[0];
+                  console.log("The connect sdk call was made.")
                   if (d.getElementById(id)) return;
                   js = d.createElement(s); js.id = id;
                   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1514462522175004&version=v2.0";
